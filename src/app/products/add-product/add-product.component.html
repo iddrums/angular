@@ -1,0 +1,30 @@
+<div class="auth-cont">
+  <div *ngIf="isLoading" style="text-align: center; padding-top: 80px;">
+    <app-loading-spinner></app-loading-spinner>
+  </div>
+  <!-- <div class="alert alert-danger" role="alert" *ngIf="error">
+    {{ error }}
+  </div> -->
+  <div *ngIf="!isLoading">
+    <h1>Add New Product</h1>
+    <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+      <div class="form-group pb-3">
+        <input type="text" class="form-control" placeholder="Title" ngModel name="productTitle" required productTitle>
+      </div>
+      <div class="form-group pb-3">
+        <input type="text" class="form-control"  placeholder="description" ngModel name="description" required description>
+      </div>
+      <div class="form-group pb-3">
+        <input type="text" class="form-control"  placeholder="imageUrl" ngModel name="imagePath" required imagePath>
+      </div>
+      <div class="form-group pb-3">
+        <input type="text" class="form-control"  placeholder="price" ngModel name="price" required price>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+

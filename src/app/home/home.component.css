@@ -1,0 +1,27 @@
+.welcome {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.d-block {
+    max-height: 70%;
+    max-width: 70%;
+}
+
+.carousel-item {
+    max-height: 70%;
+    max-width: 70%;
+}
+
+.container {
+    height: 60px;
+}

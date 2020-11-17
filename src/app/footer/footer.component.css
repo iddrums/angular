@@ -1,0 +1,20 @@
+.view {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 0 0px;
+    height: 7%;
+    justify-content: space-around;
+    z-index: 100;
+    bottom: 0;
+    color: white;
+    background-color: blue;
+}
+
+.spice {
+    margin-top: 1%;
+}
+
+.container-fluid {
+    margin-left: 0 0px;
+}
