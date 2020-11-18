@@ -12,8 +12,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductDetailComponent } from './productdetails/productdetails.component';
-import { ProductListComponent } from './products/product-list/product-list.component';
-import { ProductItemComponent } from './products/product-item/product-item.component';
 import { NewComponent } from './products/add-product/add-product.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
@@ -26,7 +24,6 @@ import { CookieService } from 'ngx-cookie-service';
 import { StoreModule } from '@ngrx/store';
 import * as fromApp from './store/app.reducer';
 import { ProductsService } from './products/product.service';
-import { AuthComponent } from './auth/auth.component';
 import { OrderComponent } from './order/order.component';
 
 
@@ -41,14 +38,11 @@ import { OrderComponent } from './order/order.component';
     HeaderComponent,
     FooterComponent,
     ProductDetailComponent,
-    ProductListComponent,
-    ProductItemComponent,
     NewComponent,
     LoadingSpinnerComponent,
     AlertComponent,
     CartComponent,
     CheckoutComponent,
-    AuthComponent,
     OrderComponent,
 
   ],

@@ -8,9 +8,6 @@
                </strong>
               </h3>
 
-                <!-- <h3>
-                  Dogs, often hailed as humans’ best friends, have been the topic of many scientific studies looking into how they might boost our well-being. In this Spotlight, we’ll explain how your friendly pup can benefit your health across the board
-                </h3> -->
             </div>
               <div class="card bg-dark text-white">
                 <img src="../assets/images/dog12.jpg" class="card-img" alt="...">
@@ -22,15 +19,16 @@
               </div>
             <div>
                 <h3 class="text-center mt-6">Latest Products</h3>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-xs-12" sm="6" md="4">
-                          <h1>hello</h1>
-                          <!-- <app-product-item
-                          *ngFor="let productEl of products.slice(-3); let i = index"
-                          [product]="productEl"
-                          [index]="i"></app-product-item> -->
+                          <app-products
+                          style="cursor: pointer;"
+                          routerLink="/products/{{ product.id }}"
+                          routerLinkActive="active"
+                          class="list-group-item clearfix col-lg-4"
+                         *ngFor="let product of products; let i = index"></app-products>
                         </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
