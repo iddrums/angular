@@ -19,16 +19,13 @@
               </div>
             <div>
                 <h3 class="text-center mt-6">Latest Products</h3>
-                    <!-- <div class="row">
-                        <div class="col-xs-12" sm="6" md="4">
-                          <app-products
-                          style="cursor: pointer;"
-                          routerLink="/products/{{ product.id }}"
-                          routerLinkActive="active"
-                          class="list-group-item clearfix col-lg-4"
-                         *ngFor="let product of products; let i = index"></app-products>
-                        </div>
-                </div> -->
+                <div class="image-grip">
+                  <div *ngFor="let product of latestProducts.slice(-3); let i = index" class="image">
+                    <a routerLink="/products/{{product?.id}}">
+                      <img class="image" src="{{product?.imagePath}}" alt="">
+                    </a>
+                  </div>
+                </div>
             </div>
         </div>
     </div>

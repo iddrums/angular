@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  prodService: any;
+  latestProducts: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+//   getLatestProducts() {
+//     this.prodService.getProducts().subscribe(
+//       productData => {
+//       for (const key in productData) {
+//         this.latestProducts.push({...productData[key], id: key });
+//       }
+//     },
+//   );
+// };
 }
