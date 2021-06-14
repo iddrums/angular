@@ -3,17 +3,17 @@
     <div class="col-md-6 col-12">
       <h2>{{ productData?.title }}</h2>
       <div>
-        <img class="detail-img my-4" src="{{ productData?.imagePath }}" alt="">
+         <img class="detail-img my-4" src="{{ productData?.imagePath }}" alt="">
       </div>
-      <h2>₦ {{ productData?.price }}</h2>
-    </div>
+    <h2>₦ {{ productData?.price }}</h2>
+  </div>
     <div class="col-md-6 col-12">
       <div class="mt-5">
-        <p>{{ productData?.description }}</p>
+          <p>{{ productData?.description }}</p>
         <div class="d-flex justify-content-center">
-          <a routerLink="/products/{{productID}}/edit">
-            <button type="button" class="btn btn-primary">Edit</button>
-          </a>
+            <a routerLink="/products/{{productID}}/edit">
+              <button type="button" class="btn btn-primary">Edit</button>
+            </a>
             <button (click)="addCart(productData)" type="button" class="btn btn-success cart-but mx-4">Add To Cart</button>
             <button (click)="onDeleteProduct(productID)" type="button" class="btn btn-danger cart-but">Delete</button>
         </div>

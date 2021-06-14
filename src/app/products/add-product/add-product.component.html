@@ -9,19 +9,19 @@
     <h1>Add New Product</h1>
     <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
       <div class="form-group pb-3">
-        <input type="text" class="form-control" placeholder="Title" ngModel name="productTitle" required productTitle>
+          <input type="text" class="form-control" placeholder="Title" ngModel name="productTitle" required productTitle>
       </div>
       <div class="form-group pb-3">
-        <input type="text" class="form-control"  placeholder="description" ngModel name="description" required description>
+          <input type="text" class="form-control"  placeholder="description" ngModel name="description" required description>
       </div>
       <div class="form-group pb-3">
-        <input type="text" class="form-control"  placeholder="imageUrl" ngModel name="imagePath" required imagePath>
+           <input type="text" class="form-control"  placeholder="imageUrl" ngModel name="imagePath" required imagePath>
       </div>
       <div class="form-group pb-3">
-        <input type="text" class="form-control"  placeholder="price" ngModel name="price" required price>
+            <input type="text" class="form-control"  placeholder="price" ngModel name="price" required price>
       </div>
       <div>
-        <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Submit</button>
+             <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Submit</button>
       </div>
     </form>
   </div>
